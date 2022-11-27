@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="app">
+    <button v-on:click="postTweet">ツイートします</button>
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import { collection, addDoc } from "firebase/firestore"
+// firebase.js で db として export したものを import
+import { db } from "./firebase"
 
 export default {
-  name: "App",
-  components: {
-    HelloWorld,
+  methods: {
+    postTweet() {
+      addDoc(collection(db, "tweets"), {
+        text: "こんにちは、ツイートの本文です。",
+      })
+    },
   },
-};
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
-</style>
+</script>
