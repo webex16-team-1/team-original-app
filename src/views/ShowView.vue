@@ -1,0 +1,73 @@
+<template>
+  <header class="header-nav">
+    <nav><a href="./">TOP</a></nav>
+    <nav><a href="./history">歴史</a></nav>
+    <nav><a href="./explain">説明</a></nav>
+  </header>
+
+  <div id="block">
+    <div id="show-box">
+      <h1 id="title">今日のシーシャ</h1>
+      <p>説明</p>
+      <p>HP</p>
+      <p>口コミ</p>
+    </div>
+  </div>
+
+  <div class="show">
+    <h1>This is my page</h1>
+  </div>
+
+  <footer>
+    <p>©2022 webex</p>
+  </footer>
+</template>
+
+<style>
+.header-nav {
+  background-color: #000;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav {
+  margin-right: 5%;
+  color: white;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+#block {
+  height: 800px;
+  width: 100%;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+}
+#title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#title {
+  font-size: 80px;
+}
+footer {
+  color: white;
+  height: 30px;
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: center;
+}
+</style>
