@@ -5,7 +5,7 @@
     <nav><a href="./explain">説明</a></nav>
   </header>
 
-  <div id="block">
+  <div id="block-explain">
     <div id="explain-box">
       <p>
         別名”水タバコ”とも呼ばれる「シーシャ」。近年SNSなどで話題を呼んでおり、愛好家が少しずつ増えている注目のトレンドです。
@@ -48,8 +48,20 @@ a {
   display: flex;
   justify-content: center;
 }
+#block-explain {
+  height: 800px;
+  width: 100%;
+  /* background-color: azure; */
+  background-image: url("../static/images/background.png");
+  display: flex;
+  justify-content: center;
+}
+#block-explain p {
+  color: #fff;
+}
 #explain-box {
   display: flex;
+  padding: 20%;
   align-items: center;
   justify-content: center;
   flex-direction: column;

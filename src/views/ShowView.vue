@@ -79,7 +79,6 @@ export default {
   position: fixed;
   height: 60px;
   width: 100%;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -108,12 +107,6 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-#random {
-  padding: 40%;
-}
-#random_result {
-  padding: 40%;
 }
 #title {
   font-size: 80px;
