@@ -67,6 +67,10 @@ export default {
 }
 </script>
 <style>
+/*うぃんくんへ 
+画像はサンプルで入れてるけど、
+ちゃんとしたのに切り替える時にもサイズ調整は必要だから
+画面に合うようにうまくサイズ調整しといてほしい！*/
 .header-nav {
   background-color: #000;
   position: fixed;
