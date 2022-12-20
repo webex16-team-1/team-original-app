@@ -93,6 +93,9 @@ a {
   color: #fff;
   text-decoration: none;
 }
+img {
+  width: 70%;
+}
 #block {
   height: 800px;
   width: 100%;
@@ -105,6 +108,12 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+#random {
+  padding: 40%;
+}
+#random_result {
+  padding: 40%;
 }
 #title {
   font-size: 80px;
