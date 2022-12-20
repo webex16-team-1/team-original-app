@@ -7,7 +7,7 @@
 
   <div id="block">
     <div id="title-box">
-      <h1 id="title">今日のシーシャ</h1>
+      <h1 id="title">今日のフレーバー</h1>
       <a class="link" href="./show"></a>
     </div>
   </div>
