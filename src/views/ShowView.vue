@@ -15,7 +15,7 @@
         </div>
         <div class="random_result">
           <p v-if="result">{{ result }}です！</p>
-          <img class="img" :src="resultImage" />
+          <img class="img" v-if="resultImage" :src="resultImagePath" />
           <p v-if="resultExplanation">{{ resultExplanation }}です！</p>
           <button v-if="resultLink">{{ resultLink }}</button>
           <button v-if="resultLinkPost">{{ resultLinkPost }}</button>
