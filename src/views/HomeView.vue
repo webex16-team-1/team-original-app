@@ -13,6 +13,7 @@
       <p class="top-text">We love shisha</p>
       <p class="top-text">You will find your favorite</p>
     </div>
+    <Show />
     <div id="today-box">
       <div id="today-titile-box">
         <p id="today-title">今日のシーシャ</p>
@@ -46,19 +47,23 @@
       </div>
     </div>
   </div>
-  <div class="home"></div>
 
   <footer>
     <p>©2022 webex</p>
   </footer>
 </template>
 
-<script></script>
+<script>
+import Show from "../components/Show.vue"
+export default {
+  components: { Show },
+}
+</script>
 
 <style>
 .header-nav {
-  border-bottom: solid 2px white;
-  background-color: #000;
+  border-bottom: solid 2px #fafafa;
+  background-color: #1a1a1a;
   position: fixed;
   height: 60px;
   width: 100%;
@@ -69,24 +74,27 @@
   align-items: center;
 }
 .header-nav #title {
-  color: white;
+  color: #fafafa;
   position: fixed;
   left: 20px;
   font-size: 50px;
 }
 nav {
   margin-right: 5%;
-  color: white;
+  color: #fafafa;
 }
 a {
-  color: #fff;
+  color: #fafafa;
   text-decoration: none;
 }
-
+p {
+  color: #fafafa;
+  text-decoration: none;
+}
 #first-block {
-  height: 3000px;
+  height: 4000px;
   width: 100%;
-  background-color: black;
+  background-color: #1a1a1a;
 }
 #top-image-box {
   text-align: right;
@@ -98,7 +106,7 @@ a {
 }
 .top-text {
   font-size: 70px;
-  color: white;
+  color: #fafafa;
   position: relative;
   bottom: 270px;
   left: 150px;
@@ -110,7 +118,7 @@ a {
 }
 #today-title {
   font-size: 50px;
-  color: white;
+  color: #fafafa;
 }
 #today-image {
   width: 700px;
@@ -118,7 +126,7 @@ a {
 }
 #today-text {
   font-size: 20px;
-  color: white;
+  color: #fafafa;
 }
 #explain-box {
   padding-top: 200px;
@@ -131,11 +139,11 @@ a {
 }
 #explain-title {
   font-size: 40px;
-  color: white;
+  color: #fafafa;
 }
 #explain-text {
   font-size: 20px;
-  color: white;
+  color: #fafafa;
 }
 #flavor-box {
   padding-top: 200px;
@@ -144,17 +152,17 @@ a {
 }
 #flavor-button {
   font-size: 30px;
-  color: white;
+  color: #fafafa;
 }
 .flavor-text {
   font-size: 20px;
-  color: white;
+  color: #fafafa;
 }
 
 footer {
-  color: white;
+  color: #fafafa;
   height: 30px;
-  background-color: black;
+  background-color: #1a1a1a;
   bottom: 0;
   width: 100%;
   display: flex;

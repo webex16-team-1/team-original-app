@@ -5,6 +5,21 @@
     <nav><a href="./explain">説明</a></nav>
   </header>
   <div class="home__wrapper">
+    <p>フレーバー1の説明</p>
+    <p>ああああああああああああ</p>
+    <p>フレーバーの評価</p>
+    <submit-form />
+    <p>フレーバー2の説明</p>
+    <p>ああああああああああああ</p>
+    <p>フレーバーの評価</p>
+    <submit-form />
+    <p>フレーバー3の説明</p>
+    <p>ああああああああああああ</p>
+    <p>フレーバーの評価</p>
+    <submit-form />
+    <p>フレーバー4の説明</p>
+    <p>ああああああああああああ</p>
+    <p>フレーバーの評価</p>
     <submit-form />
   </div>
 </template>
