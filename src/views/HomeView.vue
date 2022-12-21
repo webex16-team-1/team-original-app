@@ -5,10 +5,35 @@
     <nav><a href="./explain">説明</a></nav>
   </header>
 
+<<<<<<< HEAD
   <div id="block">
     <div id="title-box">
       <h1 id="title">今日のフレーバー!!</h1>
       <a class="link" href="./show"></a>
+=======
+  <div id="first-block">
+    <image src="../assets/smoke1.jpg" id="smoke-image"></image>
+    <div id="text-box">
+      <p class="text1">We love shisha.</p>
+      <p class="text1">You will find your favorite</p>
+    </div>
+    <div id="today-box">
+      <h1>今日のシーシャ</h1>
+      <image src="../assets/smoke1.jpg" id="smoke-image"></image>
+      <p class="content-detail">
+        説明：あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+      </p>
+      <p class="content-detail">HP：https://google.com</p>
+    </div>
+
+    <div id="explain-box">
+      <h2>シーシャの説明</h2>
+      <p id="explain-text">
+        シーシャはシーシャです。シーシャはシーシャです。
+        シーシャはシーシャです。 シーシャはシーシャです。
+        シーシャはシーシャです。 シーシャはシーシャです。
+      </p>
+>>>>>>> origin/main
     </div>
   </div>
   <div class="home"></div>
@@ -22,6 +47,7 @@
 
 <style>
 .header-nav {
+  border-bottom: solid 2px white;
   background-color: #000;
   position: fixed;
   height: 60px;
@@ -41,35 +67,42 @@ a {
   text-decoration: none;
 }
 
-#block {
-  height: 800px;
+#first-block {
+  height: 3000px;
   width: 100%;
-  background-color: azure;
+  background-color: black;
+}
+#smoke-image {
+  padding-top: 100px;
+  height: 500px;
+  width: 700px;
+}
+.text1 {
+  font-size: 30px;
+  color: white;
+}
+#today-box {
+  width: 700px;
+  height: 500px;
+}
+.content-detail {
+  padding-top: 30px;
+  border-bottom: solid 2px white;
+  color: white;
+  text-align: center;
+  display: inline;
+}
+.explain-box {
+  padding-top: 300px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-#title-box {
-  margin-top: 200px;
-  height: 40%;
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border: 2px solid black;
+h2 {
+  color: white;
 }
-.link {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#title {
-  font-size: 80px;
+#explain-text {
+  color: white;
 }
 footer {
   color: white;
