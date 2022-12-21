@@ -13,6 +13,7 @@
       <p class="top-text">We love shisha</p>
       <p class="top-text">You will find your favorite</p>
     </div>
+    <Show />
     <div id="today-box">
       <div id="today-titile-box">
         <p id="today-title">今日のシーシャ</p>
@@ -46,14 +47,18 @@
       </div>
     </div>
   </div>
-  <div class="home"></div>
 
   <footer>
     <p>©2022 webex</p>
   </footer>
 </template>
 
-<script></script>
+<script>
+import Show from "../components/Show.vue"
+export default {
+  components: { Show },
+}
+</script>
 
 <style>
 .header-nav {
@@ -84,7 +89,7 @@ a {
 }
 
 #first-block {
-  height: 3000px;
+  height: 4000px;
   width: 100%;
   background-color: black;
 }

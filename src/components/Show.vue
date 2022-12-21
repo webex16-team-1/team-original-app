@@ -1,10 +1,4 @@
 <template>
-  <header class="header-nav">
-    <nav><a href="./">TOP</a></nav>
-    <nav><a href="./history">歴史</a></nav>
-    <nav><a href="./explain">説明</a></nav>
-  </header>
-
   <div id="block">
     <div id="show-box">
       <h3 id="title">今日のフレーバー</h3>
@@ -23,13 +17,6 @@
       </div>
     </div>
   </div>
-  <div class="show">
-    <h1>This is my page</h1>
-  </div>
-
-  <footer>
-    <p>©2022 webex</p>
-  </footer>
 </template>
 <script>
 export default {
@@ -76,53 +63,9 @@ export default {
 ・投稿機能
 ・button-linkをボタンっぽくしてほしい！
 */
-.header-nav {
-  background-color: #000;
-  position: fixed;
-  height: 60px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-nav {
-  margin-right: 5%;
-  color: white;
-}
-a {
-  color: #fff;
-  text-decoration: none;
-}
-img {
-  width: 70%;
-}
-#block {
-  height: 800px;
-  width: 100%;
-  background-color: azure;
-  display: flex;
-  justify-content: center;
-  padding: 10%;
-}
-#title-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#title {
-  font-size: 80px;
-}
-footer {
-  color: white;
-  height: 30px;
-  background-color: black;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  justify-content: center;
+
+.img {
+  width: 300px;
+  height: 300px;
 }
 </style>
