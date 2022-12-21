@@ -1,10 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router"
 import HomeView from "../views/HomeView.vue"
-import AboutView from "../views/AboutView.vue"
-import MyPageView from "../views/MyPageView.vue"
-import ShowView from "../views/ShowView.vue"
-import HistoryView from "../views/HistoryView.vue"
-import ExplainView from "../views/ExplainView.vue"
+import DetailView from "../views/DetailView.vue"
+import TweetView from "../views/TweetView.vue"
 
 const routes = [
   {
@@ -13,29 +10,15 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "About",
-    component: AboutView,
+    path: "/detail",
+    name: "Detail",
+    component: DetailView,
   },
+
   {
-    path: "/my-page",
-    name: "MyPage",
-    component: MyPageView,
-  },
-  {
-    path: "/show",
-    name: "Show",
-    component: ShowView,
-  },
-  {
-    path: "/history",
-    name: "History",
-    component: HistoryView,
-  },
-  {
-    path: "/explain",
-    name: "Explain",
-    component: ExplainView,
+    path: "/tweet",
+    name: "Tweet",
+    component: TweetView,
   },
 ]
 
