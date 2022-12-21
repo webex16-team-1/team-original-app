@@ -4,7 +4,6 @@
     <nav><a href="./history">歴史</a></nav>
     <nav><a href="./explain">説明</a></nav>
   </header>
-
   <div id="first-block">
     <image src="../assets/smoke1.jpg" id="smoke-image"></image>
     <div id="text-box">
