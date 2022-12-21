@@ -5,12 +5,6 @@
     <nav><a href="./explain">説明</a></nav>
   </header>
 
-<<<<<<< HEAD
-  <div id="block">
-    <div id="title-box">
-      <h1 id="title">今日のフレーバー!!</h1>
-      <a class="link" href="./show"></a>
-=======
   <div id="first-block">
     <image src="../assets/smoke1.jpg" id="smoke-image"></image>
     <div id="text-box">
@@ -33,7 +27,6 @@
         シーシャはシーシャです。 シーシャはシーシャです。
         シーシャはシーシャです。 シーシャはシーシャです。
       </p>
->>>>>>> origin/main
     </div>
   </div>
   <div class="home"></div>
