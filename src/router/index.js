@@ -5,6 +5,7 @@ import MyPageView from "../views/MyPageView.vue"
 import ShowView from "../views/ShowView.vue"
 import HistoryView from "../views/HistoryView.vue"
 import ExplainView from "../views/ExplainView.vue"
+import ToukouView from "../views/ToukouView.vue"
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/explain",
     name: "Explain",
     component: ExplainView,
+  },
+  {
+    path: "/Toukou",
+    name: "Toukou",
+    component: ToukouView,
   },
 ]
 
