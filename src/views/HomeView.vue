@@ -7,27 +7,27 @@
   </header>
   <div id="first-block">
     <div id="top-image-box">
-      <image src="../assets/top-image.jpg" id="top-image"></image>
+      <img src="../assets/top-image.jpg" id="top-image" />
     </div>
     <div id="top-text-box">
       <p class="top-text">We love shisha</p>
       <p class="top-text">You will find your favorite</p>
     </div>
     <Show />
+    <!-- 
     <div id="today-box">
       <div id="today-titile-box">
         <p id="today-title">今日のシーシャ</p>
       </div>
-      <div id="today-image-box">
-        <image src="../assets/today-image.jpg" id="today-image"></image>
-      </div>
+      <div id="today-image-box"></div>
       <div id="today-text-box">
         <p id="today-text">今日のシーシャはこれこれです。</p>
       </div>
     </div>
+  -->
     <div id="explain-box">
       <div id="explain-image-box">
-        <image src="../assets/explain-image.jpg" id="explain-image"></image>
+        <img src="../assets/explain.jpg" id="explain-image" />
       </div>
       <div id="explain-text-box">
         <p id="explain-title">シーシャって何？</p>
@@ -61,6 +61,10 @@ export default {
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
 .header-nav {
   border-bottom: solid 2px #fafafa;
   background-color: #1a1a1a;
@@ -94,7 +98,8 @@ p {
 #first-block {
   height: 4000px;
   width: 100%;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
+  background-color: rgba(0, 0, 0, 0.921);
 }
 #top-image-box {
   text-align: right;

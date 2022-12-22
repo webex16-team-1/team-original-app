@@ -1,20 +1,21 @@
 <template>
-  <div id="block">
-    <div id="show-box">
-      <h3 id="title">今日のフレーバー</h3>
-      <div class="random">
-        <div class="random_start">
-          <p>今日のおすすめフレーバーは…？</p>
-          <button @click="startRandom">フレーバーを表示する</button>
-        </div>
-        <div class="random_result">
-          <p v-if="result">{{ result }}です！</p>
-          <img class="img" v-if="resultImage" :src="resultImagePath" />
-          <p v-if="resultExplanation">{{ resultExplanation }}です！</p>
-          <button v-if="resultLink">{{ resultLink }}</button>
-          <button v-if="resultLinkPost">{{ resultLinkPost }}</button>
-        </div>
-      </div>
+  <div id="today-box">
+    <div id="today-titile-box">
+      <p id="today-title">今日のシーシャ</p>
+      <p>今日のおすすめフレーバーは…？</p>
+      <button @click="startRandom">フレーバーを表示する</button>
+      <p v-if="result">{{ result }}です！</p>
+    </div>
+    <div id="today-image-box">
+      <img class="img" v-if="resultImage" :src="resultImagePath" />
+    </div>
+    <div id="today-text-box">
+      <p v-if="resultExplanation" id="today-text">
+        {{ resultExplanation }}です！
+      </p>
+
+      <button v-if="resultLink">{{ resultLink }}</button>
+      <button v-if="resultLinkPost">{{ resultLinkPost }}</button>
     </div>
   </div>
 </template>
@@ -63,8 +64,22 @@ export default {
 ・投稿機能
 ・button-linkをボタンっぽくしてほしい！
 */
+
+#today-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#today-title {
+  font-size: 50px;
+  color: #fafafa;
+}
 .img {
-  width: 300px;
-  height: 300px;
+  width: 700px;
+  height: 500px;
+}
+#today-text {
+  font-size: 20px;
+  color: #fafafa;
 }
 </style>
