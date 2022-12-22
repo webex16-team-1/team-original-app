@@ -42,8 +42,8 @@
         <p id="button-text">フレーバー体験</p>
       </div>
       <div id="flavor-text-box">
-        <p class="flavor-text">→詳しく見る</p>
-        <p class="flavor-text">→体験を投稿する</p>
+        <a href="./tweet" class="flavor-text">→詳しく見る</a>
+        <a href="./tweet" class="flavor-text">→体験を投稿する</a>
       </div>
     </div>
   </div>
@@ -70,7 +70,7 @@ export default {
   background-color: #1a1a1a;
   position: fixed;
   top: 0px;
-  height: 80px;
+  height: 60px;
   width: 100%;
 
   display: flex;
@@ -146,8 +146,13 @@ p {
 #explain-title {
   font-size: 40px;
   color: #fafafa;
+  position: relative;
+  left: 200px;
 }
 #explain-text {
+  padding-top: 80px;
+  padding-right: 30px;
+  padding-left: 30px;
   font-size: 20px;
   color: #fafafa;
 }
@@ -156,13 +161,20 @@ p {
   display: flex;
   justify-content: space-around;
 }
+#flavor-text-box {
+  display: flex;
+  flex-direction: column;
+}
 #flavor-button {
-  font-size: 30px;
+  font-size: 40px;
   color: #fafafa;
 }
 .flavor-text {
   font-size: 20px;
   color: #fafafa;
+}
+a:hover {
+  color: red;
 }
 
 footer {
