@@ -3,16 +3,18 @@
     <div id="today-titile-box">
       <p id="today-title">今日のシーシャ</p>
       <p>今日のおすすめフレーバーは…？</p>
-      <button @click="startRandom">フレーバーを表示する</button>
-      <p v-if="result">{{ result }}です！</p>
+      <button @click="startRandom" id="flavor-button">
+        フレーバーを表示する
+      </button>
+      <p v-if="result" id="result-text">{{ result }}です！</p>
     </div>
     <div id="today-image-box">
       <img class="img" v-if="result" :src="resultImagePath" />
     </div>
     <div v-if="result" id="today-text-box">
       <p id="today-text">{{ resultExplanation }}です！</p>
-      <a :href="resultLink">フレーバーを購入する</a><br />
-      <a href="./tweet">フレーバの評価をみる</a>
+      <a :href="resultLink" class="today-text2">→フレーバーを購入する</a><br />
+      <a href="./tweet" class="today-text2">→フレーバの評価をみる</a>
     </div>
   </div>
 </template>
@@ -84,12 +86,45 @@ export default {
   font-size: 50px;
   color: #fafafa;
 }
+#result-text {
+  font-size: 30px;
+}
+button#flavor-button {
+  /* ブラウザ特有のスタイルを無効に */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* 整える */
+  margin: 1em 0; /* 前後の隙間 */
+  padding: 0.6em 1em; /* 塗りの余白 */
+  font-size: 1em; /* フォントサイズ */
+  background-color: #1aa1ff; /* 背景色 */
+  color: #fff; /* テキストカラー */
+  cursor: pointer; /* カーソルを指マークに */
+  border-radius: 3px; /* 角の丸み */
+  border: 0; /* 枠線を消す */
+  transition: 0.3s; /* ホバーの変化を滑らかに */
+}
+
+/* ホバー時（カーソルをのせた時）の見た目 */
+button#flavor-button:hover {
+  background-color: #064fda; /* 背景色 */
+}
 .img {
   width: 700px;
   height: 500px;
 }
+#today-text-box {
+  width: 700px;
+}
 #today-text {
-  font-size: 20px;
+  padding-top: 20px;
+  font-size: 30px;
   color: #fafafa;
+}
+.today-text2 {
+  padding-top: 20px;
+  font-size: 20px;
 }
 </style>

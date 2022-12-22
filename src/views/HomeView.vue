@@ -95,7 +95,7 @@ p {
   text-decoration: none;
 }
 #first-block {
-  height: 4000px;
+  height: 3300px;
   width: 100%;
   /* background-color: #1a1a1a; */
   background-color: rgba(0, 0, 0, 0.921);
@@ -153,7 +153,6 @@ p {
   padding-left: 30px;
   font-size: 20px;
   color: #fafafa;
-  padding: 5px;
 }
 #flavor-box {
   padding-top: 200px;
