@@ -7,12 +7,12 @@
       <p v-if="result">{{ result }}です！</p>
     </div>
     <div id="today-image-box">
-      <img class="img" v-if="resultImage" :src="resultImagePath" />
+      <img class="img" v-if="result" :src="resultImagePath" />
     </div>
     <div v-if="result" id="today-text-box">
       <p id="today-text">{{ resultExplanation }}です！</p>
-      <a :herf="resultLink">フレーバーを購入する</a><br />
-      <a :herf="resultLinkPost">フレーバの評価をみる</a>
+      <a :href="resultLink">フレーバーを購入する</a><br />
+      <a href="./tweet">フレーバの評価をみる</a>
     </div>
   </div>
 </template>
@@ -28,23 +28,21 @@ export default {
       ],
       image: ["img1.png", "img2.png", "img3.png", "img4.png"],
       explanation: [
-        "フルーツそのままのジューシーさがウリ！くせがなく、万人に愛される味です。",
-        "グレープの甘味とミントのさっぱり感が最高！ブランドが異なる組み合わせですが、非常にマッチしています。",
-        "シーシャといえばこのフレーバー！「シーシャを試したい！」という人におすすめのフレーバーです。",
-        "少し甘めのフレーバーを試したい人に！甘さと香りのバランスに優れた、初心者向けのフレーバーです。",
+        "フルーツそのままのジューシーさがウリ！くせがなく、万人に愛される味",
+        "グレープの甘味とミントのさっぱり感が最高！ブランドが異なる組み合わせですが、非常にマッチしたフレーバー",
+        "シーシャといえばこのフレーバー！「シーシャを試したい！」という人におすすめのフレーバー",
+        "少し甘めのフレーバーを試したい人に！甘さと香りのバランスに優れた、初心者向けのフレーバー",
       ],
       link: [
-        "リンク1",
-        "リンク2",
+        "https://www.shisha-mart.com/product/1744",
+        "https://www.shisha-mart.com/product/2434",
         "https://csb-online.jp/product/al-fakher%e3%82%a2%e3%83%ab%e3%83%95%e3%82%a1%e3%83%bc%e3%83%98%e3%83%ab-two-apple%e3%83%88%e3%82%a5%e3%83%bc%e3%82%a2%e3%83%83%e3%83%97%e3%83%ab-50g%e3%80%9c250g",
-        "リンク4",
+        "https://csb-online.jp/product/al-fakher%e3%82%a2%e3%83%ab%e3%83%95%e3%82%a1%e3%83%bc%e3%83%98%e3%83%ab-banana%e3%83%90%e3%83%8a%e3%83%8a-50g%e3%80%9c250g",
       ],
-      linkPost: ["投稿1", "投稿2", "投稿3", "投稿4"],
       result: null,
       resultImage: null,
       resultExplanation: null,
       resultLink: null,
-      resultLinkPost: null,
     }
   },
   methods: {

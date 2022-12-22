@@ -46,11 +46,8 @@
         <p class="flavor-text">→体験を投稿する</p>
       </div>
     </div>
-  </div>
-
-  <footer>
     <Footer />
-  </footer>
+  </div>
 </template>
 
 <script>
