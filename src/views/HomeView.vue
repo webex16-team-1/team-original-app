@@ -2,8 +2,8 @@
   <header class="header-nav">
     <p id="title">newbie smoke</p>
     <nav><a href="./">TOP</a></nav>
-    <nav><a href="./history">歴史</a></nav>
-    <nav><a href="./explain">説明</a></nav>
+    <nav><a href="./tweet">投稿</a></nav>
+    <nav><a href="#explain-box">説明</a></nav>
   </header>
   <div id="first-block">
     <div id="top-image-box">
@@ -69,7 +69,8 @@ export default {
   border-bottom: solid 2px #fafafa;
   background-color: #1a1a1a;
   position: fixed;
-  height: 60px;
+  top: 0px;
+  height: 80px;
   width: 100%;
 
   display: flex;
