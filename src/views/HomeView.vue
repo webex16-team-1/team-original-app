@@ -1,49 +1,77 @@
 <template>
   <header class="header-nav">
+    <p id="title">newbie smoke</p>
     <nav><a href="./">TOP</a></nav>
-    <nav><a href="./history">歴史</a></nav>
-    <nav><a href="./explain">説明</a></nav>
+    <nav><a href="./tweet">投稿</a></nav>
+    <nav><a href="#explain-box">説明</a></nav>
   </header>
-
   <div id="first-block">
-    <image src="../assets/smoke1.jpg" id="smoke-image"></image>
-    <div id="text-box">
-      <p class="text1">We love shisha.</p>
-      <p class="text1">You will find your favorite</p>
+    <div id="top-image-box">
+      <img src="../assets/top-image.jpg" id="top-image" />
     </div>
+    <div id="top-text-box">
+      <p class="top-text">We love shisha</p>
+      <p class="top-text">You will find your favorite</p>
+    </div>
+    <Show />
+    <!-- 
     <div id="today-box">
-      <h1>今日のシーシャ</h1>
-      <image src="../assets/smoke1.jpg" id="smoke-image"></image>
-      <p class="content-detail">
-        説明：あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-      </p>
-      <p class="content-detail">HP：https://google.com</p>
+      <div id="today-titile-box">
+        <p id="today-title">今日のシーシャ</p>
+      </div>
+      <div id="today-image-box"></div>
+      <div id="today-text-box">
+        <p id="today-text">今日のシーシャはこれこれです。</p>
+      </div>
     </div>
-
+  -->
     <div id="explain-box">
-      <h2>シーシャの説明</h2>
-      <p id="explain-text">
-        シーシャはシーシャです。シーシャはシーシャです。
-        シーシャはシーシャです。 シーシャはシーシャです。
-        シーシャはシーシャです。 シーシャはシーシャです。
-      </p>
+      <div id="explain-image-box">
+        <img src="../assets/explain.jpg" id="explain-image" />
+      </div>
+      <div id="explain-text-box">
+        <p id="explain-title">シーシャって何？</p>
+        <p id="explain-text">
+          別名”水タバコ”とも呼ばれる「シーシャ」。近年SNSなどで話題を呼んでおり、愛好家が少しずつ増えている注目のトレンドです。
+          シーシャには、煙にさまざまなフレーバーをプラスできるという特徴もあります。水タバコで燃やすタバコの葉には、さまざまなフレーバーがついているため、フルーティーな甘い味わい、刺激的なスパイシーな味わいなど、実に多彩な味や香りを楽しめます。そのため男性はもちろん、女性からも「おしゃれ」「おいしい」と親しまれています。
+        </p>
+      </div>
+    </div>
+    <div id="flavor-box">
+      <div id="flavor-button">
+        <p id="button-text">フレーバー体験</p>
+      </div>
+      <div id="flavor-text-box">
+        <p class="flavor-text">→詳しく見る</p>
+        <p class="flavor-text">→体験を投稿する</p>
+      </div>
     </div>
   </div>
-  <div class="home"></div>
 
   <footer>
-    <p>©2022 webex</p>
+    <Footer />
   </footer>
 </template>
 
-<script></script>
+<script>
+import Show from "../components/Show.vue"
+import Footer from "../components/Footer.vue"
+export default {
+  components: { Show, Footer },
+}
+</script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
 .header-nav {
-  border-bottom: solid 2px white;
-  background-color: #000;
+  border-bottom: solid 2px #fafafa;
+  background-color: #1a1a1a;
   position: fixed;
-  height: 60px;
+  top: 0px;
+  height: 80px;
   width: 100%;
 
   display: flex;
@@ -51,56 +79,98 @@
   justify-content: flex-end;
   align-items: center;
 }
+.header-nav #title {
+  color: #fafafa;
+  position: fixed;
+  left: 20px;
+  font-size: 50px;
+}
 nav {
   margin-right: 5%;
-  color: white;
+  color: #fafafa;
 }
 a {
-  color: #fff;
+  color: #fafafa;
   text-decoration: none;
 }
-
+p {
+  color: #fafafa;
+  text-decoration: none;
+}
 #first-block {
-  height: 3000px;
+  height: 4000px;
   width: 100%;
-  background-color: black;
+  /* background-color: #1a1a1a; */
+  background-color: rgba(0, 0, 0, 0.921);
 }
-#smoke-image {
-  padding-top: 100px;
+#top-image-box {
+  text-align: right;
+  padding-top: 400px;
+}
+#top-image {
+  width: 900px;
   height: 500px;
-  width: 700px;
 }
-.text1 {
-  font-size: 30px;
-  color: white;
+.top-text {
+  font-size: 70px;
+  color: #fafafa;
+  position: relative;
+  bottom: 270px;
+  left: 150px;
 }
 #today-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#today-title {
+  font-size: 50px;
+  color: #fafafa;
+}
+#today-image {
   width: 700px;
   height: 500px;
 }
-.content-detail {
-  padding-top: 30px;
-  border-bottom: solid 2px white;
-  color: white;
-  text-align: center;
-  display: inline;
+#today-text {
+  font-size: 20px;
+  color: #fafafa;
 }
-.explain-box {
-  padding-top: 300px;
+#explain-box {
+  padding-top: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-
-h2 {
-  color: white;
+#explain-image {
+  width: 400px;
+  height: 400px;
+}
+#explain-title {
+  font-size: 40px;
+  color: #fafafa;
 }
 #explain-text {
-  color: white;
+  font-size: 20px;
+  color: #fafafa;
+  padding: 5px;
 }
+#flavor-box {
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+#flavor-button {
+  font-size: 30px;
+  color: #fafafa;
+}
+.flavor-text {
+  font-size: 20px;
+  color: #fafafa;
+}
+
 footer {
-  color: white;
+  color: #fafafa;
   height: 30px;
-  background-color: black;
+  background-color: #1a1a1a;
   bottom: 0;
   width: 100%;
   display: flex;

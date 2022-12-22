@@ -23,7 +23,7 @@
 
 <style>
 .header-nav {
-  background-color: #000;
+  background-color: #1a1a1a;
   position: fixed;
   height: 60px;
   width: 100%;
@@ -35,10 +35,10 @@
 }
 nav {
   margin-right: 5%;
-  color: white;
+  color: #fafafa;
 }
 a {
-  color: #fff;
+  color: #fafafa;
   text-decoration: none;
 }
 #block {
@@ -57,7 +57,7 @@ a {
   justify-content: center;
 }
 #block-explain p {
-  color: #fff;
+  color: #fafafa;
 }
 #explain-box {
   display: flex;
@@ -70,9 +70,9 @@ a {
   font-size: 80px;
 }
 footer {
-  color: white;
+  color: #fafafa;
   height: 30px;
-  background-color: black;
+  background-color: #1a1a1a;
   bottom: 0;
   width: 100%;
   display: flex;

@@ -3,17 +3,16 @@
     <div id="today-titile-box">
       <p id="today-title">今日のシーシャ</p>
       <p>今日のおすすめフレーバーは…？</p>
-      <button v-if="result" @click="startRandom">フレーバーを表示する</button>
-      <p>{{ result }}です！</p>
+      <button @click="startRandom">フレーバーを表示する</button>
+      <p v-if="result">{{ result }}です！</p>
     </div>
     <div id="today-image-box">
-      <img class="img" :src="resultImagePath" />
+      <img class="img" v-if="resultImage" :src="resultImagePath" />
     </div>
-    <div id="today-text-box">
+    <div v-if="result" id="today-text-box">
       <p id="today-text">{{ resultExplanation }}です！</p>
-
-      <button>{{ resultLink }}</button>
-      <button>{{ resultLinkPost }}</button>
+      <a :herf="resultLink">フレーバーを購入する</a><br />
+      <a :herf="resultLinkPost">フレーバの評価をみる</a>
     </div>
   </div>
 </template>
@@ -21,10 +20,25 @@
 export default {
   data() {
     return {
-      choice: ["フレーバー1", "フレーバー2", "フレーバー3", "フレーバー4"],
+      choice: [
+        "Al Fakher ピーチ × Al Fakher マンゴー",
+        "Al Fakher グレープ × FUMARI ミント",
+        "Al Fakher ダブルアップル",
+        "Al Fakher バナナ",
+      ],
       image: ["img1.png", "img2.png", "img3.png", "img4.png"],
-      explanation: ["説明1", "説明2", "説明3", "説明4"],
-      link: ["リンク1", "リンク2", "リンク3", "リンク4"],
+      explanation: [
+        "フルーツそのままのジューシーさがウリ！くせがなく、万人に愛される味です。",
+        "グレープの甘味とミントのさっぱり感が最高！ブランドが異なる組み合わせですが、非常にマッチしています。",
+        "シーシャといえばこのフレーバー！「シーシャを試したい！」という人におすすめのフレーバーです。",
+        "少し甘めのフレーバーを試したい人に！甘さと香りのバランスに優れた、初心者向けのフレーバーです。",
+      ],
+      link: [
+        "リンク1",
+        "リンク2",
+        "https://csb-online.jp/product/al-fakher%e3%82%a2%e3%83%ab%e3%83%95%e3%82%a1%e3%83%bc%e3%83%98%e3%83%ab-two-apple%e3%83%88%e3%82%a5%e3%83%bc%e3%82%a2%e3%83%83%e3%83%97%e3%83%ab-50g%e3%80%9c250g",
+        "リンク4",
+      ],
       linkPost: ["投稿1", "投稿2", "投稿3", "投稿4"],
       result: null,
       resultImage: null,

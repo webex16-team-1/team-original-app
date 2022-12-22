@@ -73,6 +73,8 @@ export default {
 ちゃんとしたのに切り替える時にもサイズ調整は必要だから
 画面に合うようにうまくサイズ調整しといてほしい！
 ・後は色とかロゴとかも探しておいてくれると超助かる！
+・投稿機能
+・button-linkをボタンっぽくしてほしい！
 */
 .header-nav {
   background-color: #000;
@@ -101,6 +103,7 @@ img {
   background-color: azure;
   display: flex;
   justify-content: center;
+  padding: 10%;
 }
 #title-box {
   display: flex;
